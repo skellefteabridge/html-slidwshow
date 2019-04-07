@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SBK Våren 2019</title>
+</head>
+
+<body>
+
+  <div class="slide">
+    <h1 class="green">Långfredagsbridge 19 april</h1>
+    <p>Individuell tävling</p>
+    <p>Anmäl dig på lista i klubblokalen.</p>
+    <p>Sista anmälningsdag <strong>17/4</strong></p>
+    <h2>Tider</h2>
+    <p>Start <strong>10:00</strong></p>
+    <p>Lunch ca <strong>13:00</strong></p>
+    <p>Ingen rond påbörjas efter <strong>16:00</strong></p>
+    <p>Startavgift: 50 kr/deltagare</p>
+  </div>
+
+  <div class="slide">
+    <h1 class="green">Grattis! Seger i DM-par öppen klass</h1>
+    <h2>Segrare, Kjell Andersson - Stefan Andersson</h2>
+    <p>DM-par öppen klass spelades 30 mars 2019</p>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("slide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {
+        slideIndex = 1;
+      }
+
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+  </script>
+</body>
+
+</html>
